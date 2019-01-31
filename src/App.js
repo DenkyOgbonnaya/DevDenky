@@ -1,25 +1,46 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Projects from './components/projects';
+import ContactForm from './components/contactForm';
+import Footer from './components/footer';
+import Profile from './components/profile';
+
+
 
 class App extends Component {
+ contactRef = React.createRef();
+ projectsRef = React.createRef();
+ profileRef = React.createRef();
+
+ scrollToContact = (e) => {
+  window.scrollTo(0, this.contactRef.current.offsetTop);
+  e.preventDefault();
+}
+ 
+scrollToProjects = (e) => {
+  window.scrollTo(0, this.projectsRef.current.offsetTop);
+  e.preventDefault();
+}
+scrollToProfile = (e) => {
+  window.scrollTo(0, this.profileRef.current.offsetTop);
+  e.preventDefault();
+}
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <span ref={this.profileRef}> </span>
+        <Profile scrollToContact= {this.scrollToContact} />
+        <br />
+        <div ref={this.projectsRef}> </div>
+        <Projects />
+
+        <div ref={this.contactRef}> </div>
+        <ContactForm />
+
+        <Footer scrollToProfile= {this.scrollToProfile} scrollToProjects= {this.scrollToProjects} 
+          scrollToContact= {this.scrollToContact}
+        />
       </div>
     );
   }
