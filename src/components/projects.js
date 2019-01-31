@@ -22,8 +22,8 @@ import { Card, CardImg, CardText, CardBody, CardLink,
             <CardText>A simple application for managing a librey and its processes like finding, tracking, 
               renting and returning HiBooks.
             </CardText>
-            <CardLink href="#">Website</CardLink>
-            <CardLink href="#">GitHub</CardLink>
+            <CardLink href="http://hibooks.herokuapp.com">Website</CardLink>
+            <CardLink href="https://github.com/DenkyOgbonnaya/HiBooks">GitHub</CardLink>
           </CardBody>
         </Card>
         <br />
@@ -42,8 +42,8 @@ import { Card, CardImg, CardText, CardBody, CardLink,
               purchas decode vehicle identification number for basic information as year of manufacture,
               manufacturer, body style and engine type.
             </CardText>
-            <CardLink href="#">Website</CardLink>
-            <CardLink href="#">GitHub</CardLink>
+            <CardLink href="http://stolencars.herokuapp.com">Website</CardLink>
+            <CardLink href="https://github.com/DenkyOgbonnaya/stolencarsNg">GitHub</CardLink>
           </CardBody>
         </Card>
         <br />
@@ -60,7 +60,7 @@ import { Card, CardImg, CardText, CardBody, CardLink,
           <CardBody>
             <CardText> A simple portfolio that showcase my software products
             </CardText>
-            <CardLink href="#">GitHub</CardLink>
+            <CardLink href="https://github.com/DenkyOgbonnaya/DevDenky">GitHub</CardLink>
           </CardBody>
         </Card>
           </Col>

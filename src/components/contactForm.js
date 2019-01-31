@@ -19,27 +19,27 @@ class ContactForm extends Component {
                 <h3 style= {{background: '#ecf0f1', textAlign: 'center', height: '40px', margin:'20px' }}>
                     Contact Me
                 </h3>
-            <Form>
+            <Form action="https://formspree.io/denkyogb@gmail.com" method="POST">
             <Container>
                 <Row> 
                     <Col sm={4}> 
                         <Input name='name' value={this.state.name} placeholder='Name'
-                        onChange={this.onChange} />
+                        onChange={this.onChange} required />
                     </Col>
                     <Col sm= {4} > 
                         <Input name='email' value={this.state.email} placeholder='Email'
-                        onChange={this.onChange} />
+                        onChange={this.onChange} required />
                     </Col>
                     <Col sm={4} > 
                         <Input name='subject' value={this.state.subject} placeholder='Subject'
-                        onChange={this.onChange} />
+                        onChange={this.onChange} required />
                         <br />
                     </Col>
                 </Row>
                 <Row> 
                 <Col sm={12}> 
                     <Input type='textarea' name='message' value={this.state.message} placeholder='Message'
-                    onChange={this.onChange} />
+                    onChange={this.onChange} required />
                     </Col>
                 </Row>
                  
