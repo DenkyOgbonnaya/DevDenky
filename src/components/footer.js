@@ -28,7 +28,7 @@ const Footer = (props) =>
                         <a href ='https://github.com/DenkyOgbonnaya'> <img src={require('../images/icons/github.png')} alt='' /> Github </a> 
                     </li>
                     <li>
-                        <a href ='https://github.com/DenkyOgbonnaya'> <img src={require('../images/icons/linkedin.png')} alt='' /> LinkedIn </a> 
+                        <a href ='https://linkedin.com/in/dennis-ogbonnaya-313148103'> <img src={require('../images/icons/linkedin.png')} alt='' /> LinkedIn </a> 
                     </li>
                 </ul>
                 </div >
