@@ -1,12 +1,88 @@
 
-.profile{
- margin: 10px;
-  background: #333;
-  color: #ccc;
-  padding: 20px;
-  font-size: 15px;
-  text-align: justify;
+body {
+  background: linear-gradient(to top, #fff 94%, #212121 0%);
 }
+@media (max-width: 760px){
+.profile{
+ display: grid;
+ grid-template-columns: 1f 1f;
+  grid-auto-rows: minmax(20px, auto);
+  grid-row-gap: 5px;
+  padding-top: 20px;
+  margin: 0 auto
+}
+.avatar {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%
+}
+.name {
+  font-size: 30px;
+  align-self: center;
+  justify-self: center;
+}
+.title {
+  color: gray;
+  align-self: center;
+  justify-self: center;
+}
+.description {
+  color: gray;
+  padding: 10px;
+  text-align: justify
+}
+.socials {
+  color: #222222;
+  align-self: center;
+  justify-self: center;
+}
+}
+.socials  > ul > li {
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+  .profile{
+    display: grid;
+    grid-template-columns: 18% 50% 20%;
+     grid-template-rows: 40px 25px 40px 25px auto;
+     grid-row-gap: 5px;
+     padding-top: 50px;
+     margin: 0 auto;
+  }
+  .avatar {
+    grid-column: 1/1;
+    grid-row: 1/5;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%
+  }
+  .name {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 30px;
+  }
+  .title {
+    grid-row: 4;
+    color: gray;
+    font-size: 20px;
+  }
+  .description {
+    grid-column: 2;
+    grid-row: 5;
+    color: gray
+  }
+  .socials {
+    grid-column: 2;
+    grid-row: 6;
+    color: gray
+  }
+
+}
+
 .headline{
   text-align: center;
   top: 150x;
@@ -18,7 +94,7 @@
   text-align: center;
 }
 .profile > p > a {
-color: #ccc;
+color: gray;
 text-decoration-line: underline
 }
 .profile > p  :hover {
