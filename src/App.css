@@ -41,7 +41,7 @@ body {
 }
 .socials  > ul > li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 5px;
   cursor: pointer;
 }
 @media (min-width: 1025px) and (max-width: 1280px){
@@ -51,7 +51,6 @@ body {
      grid-template-rows: 40px 25px 40px 25px auto;
      grid-row-gap: 5px;
      padding-top: 50px;
-     margin: 0 auto;
   }
   .avatar {
     grid-column: 1/1;
@@ -81,17 +80,6 @@ body {
     color: gray
   }
 
-}
-
-.headline{
-  text-align: center;
-  top: 150x;
-}
-.profile > p > span {
-  font-size: 25px;
-  font-weight: bold;
-  font-stretch: expanded;
-  text-align: center;
 }
 .profile > p > a {
 color: gray;

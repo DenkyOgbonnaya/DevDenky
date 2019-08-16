@@ -1,5 +1,5 @@
 import React from 'react';
-import profilepix from './denky.JPG';
+import profilepix from '../images/denky.JPG';
  
 const Profile = (props) =>
     <div className= 'profile'>

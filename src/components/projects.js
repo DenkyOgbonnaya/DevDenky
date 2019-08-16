@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
-import { Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle, Row, Container, Col } from 'reactstrap';
+import {Row, Container, Col } from 'reactstrap';
   import projects from './projectsData.js';
 
   const Projects = (props) => {
@@ -12,21 +11,24 @@ import { Card, CardImg, CardText, CardBody, CardLink,
           {
             projects.map(project =>
         <Fragment key={project.name}>
-              <Col xm='12' md={{size: 5, offset:1 }}>
-        <Card >
-          <CardBody>
-            <CardTitle><h4>{project.name} </h4></CardTitle>
-            <CardSubtitle>
-            <small className="text-muted"> {project.stack} </small>
-            </CardSubtitle>
-          </CardBody>
-          <CardImg top width="100%" height="200px"  src= {project.cover} alt="Project HiBooks" />
-          <CardBody style={{height:'150px'}}>
-            <CardText>{project.description} </CardText>
-            <CardLink href={project.website}>Website</CardLink>
-            <CardLink href={project.github}>GitHub</CardLink>
-          </CardBody>
-        </Card>
+              <Col xs='12' md={{size:8, offset:2}} >
+              <div className="card mb-3" style={{maxWidth: "750px"}}>
+                <div className="row no-gutters">
+                  <div className="col-md-4">
+                    <img src={project.cover}  width="200%" height="200px" className="card-img" alt={project.name} />
+                  </div>
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <h5 className="card-title">{project.name}</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">{project.stack}</h6>
+                    <p className="card-text"> {project.description} </p>
+                    <a href={project.website} className="card-link">Website</a>
+                    <a href= {project.github} className="card-link">GitHub</a>
+ 
+                  </div>
+                </div>
+                </div>
+              </div>
           </Col>
           <br />
           </Fragment>
