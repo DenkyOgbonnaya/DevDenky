@@ -16,8 +16,8 @@ class ContactForm extends Component {
     render(){
         return(
             <div>
-                <h3 style= {{background: '#ecf0f1', textAlign: 'center', height: '40px', margin:'20px' }}>
-                    Contact Me
+                <h3 style= {{color: 'crimson', textAlign: 'center', height: '40px', margin:'20px' }}>
+                    I love to hear from you
                 </h3>
             <Form action="https://formspree.io/denkyogb@gmail.com" method="POST">
             <Container>
@@ -45,7 +45,7 @@ class ContactForm extends Component {
                  
                 </Container>
                  
-                    <Button style= {{margin: '40px'}} > Send Message </Button>
+                    <Button color="danger" style= {{margin: '40px'}} > Send Message </Button>
                     
             </Form>
             </div>

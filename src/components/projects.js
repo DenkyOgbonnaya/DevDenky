@@ -4,14 +4,14 @@ import {Row, Container, Col } from 'reactstrap';
 
   const Projects = (props) => {
     return (
-      <div>
-        <h3 style= {{background: '#ecf0f1', textAlign: 'center', height: '40px', margin:'20px' }} >My Projects </h3>
+      <div className="projects">
+        <h3 style= {{ color:"crimson", textAlign: 'center', height: '40px', margin:'20px' }} >My Projects </h3>
       <Container>
         <Row>
           {
             projects.map(project =>
         <Fragment key={project.name}>
-              <Col xs='12' md={{size:8, offset:2}} >
+              <Col sm="12" md={{size:8, offset:2}} >
               <div className="card mb-3" style={{maxWidth: "750px"}}>
                 <div className="row no-gutters">
                   <div className="col-md-4">
@@ -22,8 +22,8 @@ import {Row, Container, Col } from 'reactstrap';
                     <h5 className="card-title">{project.name}</h5>
                     <h6 className="card-subtitle mb-2 text-muted">{project.stack}</h6>
                     <p className="card-text"> {project.description} </p>
-                    <a href={project.website} className="card-link">Website</a>
-                    <a href= {project.github} className="card-link">GitHub</a>
+                    <a href={project.website} className="card-link">View app</a>
+                    <a href= {project.github} className="card-link">see code</a>
  
                   </div>
                 </div>
