@@ -16,6 +16,14 @@ const projects= [
             github: "https://github.com/DenkyOgbonnaya/eps-press",
         },
         {
+            name: "Stolen Cars",
+            stack: "*Node/Express *React *Nextjs *MongoDB",
+            description: "A car theft reporting site, check car theft status before purchase, VIN decoding etc ",
+            cover: "https://res.cloudinary.com/diibyv2i7/image/upload/v1576719807/stolen_cars.png",
+            website: "https://stolencars.herokuapp.com",
+            github: "https://github.com/DenkyOgbonnaya/stolencarsNG",
+        },
+        {
             name: "Ping",
             stack: "*Node.js/Express *React *Nextjs *Socket.io",
             description: "A real time instant messaging chat app with socket io ",
@@ -38,14 +46,6 @@ const projects= [
             cover: "https://res.cloudinary.com/diibyv2i7/image/upload/v1565316365/devalert.png",
             website: "https://devalert.me",
             github: "https://github.com/DenkyOgbonnaya/remote_job_alert-1.git",
-        },
-        {
-            name: "Stolen Cars",
-            stack: "Node/Express HTML+CSS MongoDB Bootstrap",
-            description: "A car theft reporting site, check car theft status before purchase, VIN decoding etc ",
-            cover: "https://res.cloudinary.com/diibyv2i7/image/upload/v1565316922/stolencars.png",
-            website: "https://stolencars.herokuapp.com",
-            github: "https://github.com/DenkyOgbonnaya/stolencarsNG",
         }
     ]
 export default projects;

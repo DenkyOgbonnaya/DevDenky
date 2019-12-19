@@ -36,7 +36,7 @@ const Footer = (props) =>
             </Row>
             <Row> 
                 <Col>
-                    <div className='footer' style= {{textAlign: 'center'}} > 
+                    <div className='footer' style= {{textAlign: 'center', color:"#ffffff"}} > 
                     ©{new Date().getFullYear()} Dennis Ogbonnaya
                     </div> 
                 </Col>
